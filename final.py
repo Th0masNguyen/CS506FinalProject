@@ -178,16 +178,19 @@ def Predict(df):
   y_pred = model.predict(X_test)
 
   # Evaluate the model
-  mse = mean_squared_error(y_test, y_pred)
-  print(f'Mean Squared Error: {mse}')
+#   mse = mean_squared_error(y_test, y_pred)
+#   print(f'Mean Squared Error: {mse}')
 
   # Automatically make a prediction based on the last row's WeeksSinceLastSale
   last_weeks_since_last_sale = result_df.iloc[-1]['WeeksSinceLastSale']
   predicted_weeks_until_next_sale = model.predict([[last_weeks_since_last_sale]])
   print(f'Predicted Weeks Until Next Sale (based on last row): {predicted_weeks_until_next_sale[0]}')
+  
+  test1 = 4
+  test2 = model.predict([[test1]])
+  print(test2)
 
-df = SingleItemDf('data.csv', 'ground beef')
-# print(df)
+df = SingleItemDf('data.csv', 'chicken breasts boneless')
 Predict(df)
 # df = AllDf()
 # WeeksUntilHisto(df, 'chicken breasts boneless')

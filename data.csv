@@ -1,0 +1,344 @@
+Week,Name,Category,RegPrice,SalePrice
+3/10/2023,corned beef,Meat,299,127
+3/10/2023,chicken breasts boneless,Meat,349,197
+3/10/2023,potatoes,Carbs,399,197
+3/10/2023,onions,Veg,249,197
+3/17/2023,corned beef,Meat,299,127
+3/17/2023,potatoes,Carbs,399,197
+3/17/2023,onions,Veg,249,197
+3/17/2023,ground beef,Meat,399,247
+3/17/2023,haddock,Meat,999,797
+3/24/2023,chicken thighs bone in,Meat,149,87
+3/24/2023,beef round,Meat,499,297
+3/24/2023,salmon,Meat,999,797
+3/31/2023,beef sirloin steak,Meat,599,397
+3/31/2023,ground beef fancy,Meat,599,397
+4/7/2023,chicken breasts boneless,Meat,349,197
+4/7/2023,ny beef steak,Meat,899,597
+4/14/2023,beef t-bone steak,Meat,899,697
+4/14/2023,ny beef steak,Meat,899,697
+4/14/2023,lamb loin chops,Meat,899,697
+4/14/2023,chicken thighs bone in,Meat,149,97
+4/21/2023,ground beef,Meat,399,247
+4/21/2023,salmon,Meat,999,797
+4/21/2023,shrimp,Meat,999,797
+4/28/2023,beef sirloin steak,Meat,599,397
+4/28/2023,ground beef fancy,Meat,599,397
+4/28/2023,shrimp,Meat,899,697
+4/28/2023,chicken tenders,Meat,399,277
+5/5/2023,chicken breasts boneless,Meat,349,197
+5/5/2023,shrimp,Meat,999,797
+5/5/2023,cod,Meat,999,797
+5/5/2023,pork chops bone-in,Meat,299,197
+5/12/2023,beef t-bone steak,Meat,899,697
+5/12/2023,lamb loin chops,Meat,899,697
+5/12/2023,shrimp,Meat,799,597
+5/12/2023,chicken thighs bone in,Meat,149,97
+5/19/2023,ground beef,Meat,399,247
+5/19/2023,shrimp,Meat,899,697
+5/19/2023,chicken tenders,Meat,399,297
+5/26/2023,chicken thighs bone in,Meat,149,97
+5/26/2023,beef sirloin steak tips,Meat,899,697
+5/26/2023,salmon,Meat,1099,897
+5/26/2023,shrimp,Meat,1099,897
+5/26/2023,mayo,Meat,499,377
+6/2/2023,ny beef steak,Meat,899,697
+6/2/2023,lamb loin chops,Meat,899,697
+6/2/2023,shrimp,Meat,999,697
+6/2/2023,cod,Meat,999,697
+6/2/2023,pork chops boneless,Meat,399,197
+6/9/2023,chicken breasts boneless,Meat,349,197
+6/9/2023,beef sirloin steak,Meat,599,397
+6/9/2023,ground beef fancy,Meat,599,397
+6/16/2023,beef t-bone steak,Meat,899,597
+6/16/2023,ny beef steak,Meat,899,597
+6/16/2023,shrimp,Meat,799,597
+6/16/2023,chicken thighs bone in,Meat,149,97
+6/23/2023,pork chops bone-in,Meat,299,167
+6/23/2023,chicken tenders,Meat,399,297
+6/23/2023,salmon,Meat,999,897
+6/23/2023,shrimp,Meat,999,897
+6/30/2023,beef t-bone steak,Meat,899,597
+6/30/2023,ny beef steak,Meat,899,597
+6/30/2023,shrimp,Meat,899,697
+6/30/2023,chicken thighs bone in,Meat,149,97
+6/30/2023,mayo,Fat,499,377
+7/7/2023,ground beef,Meat,399,247
+7/7/2023,pork chops boneless,Meat,399,197
+7/14/2023,chicken breasts boneless,Meat,399,197
+7/14/2023,beef sirloin steak,Meat,599,397
+7/14/2023,ground beef fancy,Meat,599,397
+7/21/2023,chicken tenders,Meat,399,247
+7/21/2023,beef round,Meat,499,297
+7/28/2023,beef sirloin steak tips,Meat,999,697
+7/28/2023,lamb loin chops,Meat,999,697
+7/28/2023,chicken thighs bone in,Meat,149,99
+8/4/2023,beef t-bone steak,Meat,999,697
+8/4/2023,ground beef,Meat,449,277
+8/4/2023,shrimp,Meat,899,697
+8/11/2023,chicken breasts boneless,Meat,399,247
+8/11/2023,beef sirloin steak,Meat,599,397
+8/11/2023,ground beef fancy,Meat,599,397
+8/11/2023,salmon,Meat,1099,897
+8/11/2023,shrimp,Meat,1099,897
+8/18/2023,ny beef steak,Meat,999,697
+8/18/2023,lamb loin chops,Meat,999,697
+8/18/2023,salmon,Meat,1299,997
+8/18/2023,swordfish,Meat,1299,997
+8/18/2023,chicken tenders,Meat,399,297
+8/25/2023,ground beef,Meat,449,247
+8/25/2023,chicken thighs bone in,Meat,149,97
+8/25/2023,mayo,Fat,549,397
+9/1/2023,beef t-bone steak,Meat,999,697
+9/1/2023,ny beef steak,Meat,999,697
+9/1/2023,shrimp,Meat,799,597
+9/1/2023,chicken tenders,Meat,399,299
+9/8/2023,chicken breasts boneless,Meat,399,247
+9/8/2023,salmon,Meat,1099,897
+9/8/2023,shrimp,Meat,1099,897
+9/15/2023,beef round,Meat,499,297
+9/15/2023,potatoes,Carbs,499,197
+9/15/2023,onions,Veg,299,197
+9/22/2023,ground beef,Meat,449,277
+9/22/2023,chicken thighs bone in,Meat,179,97
+9/29/2023,chicken breasts boneless,Meat,399,247
+9/29/2023,ny beef steak,Meat,999,697
+9/29/2023,lamb loin chops,Meat,999,697
+9/29/2023,shrimp,Meat,799,597
+10/6/2023,beef sirloin steak,Meat,599,397
+10/6/2023,ground beef fancy,Meat,599,397
+10/6/2023,salmon,Meat,1099,897
+10/6/2023,shrimp,Meat,1099,897
+10/13/2023,ground beef,Meat,449,277
+10/13/2023,swordfish,Meat,1299,997
+10/13/2023,shrimp,Meat,1299,997
+10/20/2023,chicken breasts boneless,Meat,399,247
+10/20/2023,beef round,Meat,499,397
+10/20/2023,shrimp,Meat,799,597
+10/27/2023,chicken thighs bone in,Meat,179,97
+10/27/2023,beef round,Meat,499,297
+10/27/2023,potatoes,Carbs,499,238
+11/3/2023,ny beef steak,Meat,999,697
+11/3/2023,lamb loin chops,Meat,999,697
+11/3/2023,salmon,Meat,1099,897
+11/3/2023,shrimp,Meat,1099,897
+11/10/2023,beef sirloin steak,Meat,599,397
+11/10/2023,ground beef fancy,Meat,599,397
+11/10/2023,shrimp,Meat,799,597
+11/10/2023,potatoes,Carbs,499,250
+11/10/2023,onions,Veg,299,250
+11/17/2023,ground beef,Meat,449,297
+11/17/2023,beef round,Meat,449,297
+11/17/2023,mayo,Fat,499,297
+11/24/2023,beef round,Meat,499,297
+11/24/2023,shrimp,Meat,699,497
+12/1/2023,beef t-bone steak,Meat,999,697
+12/1/2023,lamb loin chops,Meat,999,697
+12/1/2023,chicken breasts boneless,Meat,399,247
+12/1/2023,salmon,Meat,1099,897
+12/1/2023,shrimp,Meat,1099,897
+12/1/2023,onions,Veg,299,250
+12/8/2023,ny beef steak,Meat,899,597
+12/8/2023,shrimp,Meat,799,597
+12/8/2023,ground beef,Meat,449,297
+12/15/2023,ny beef steak,Meat,899,597
+12/22/2023,ny beef steak,Meat,899,597
+12/29/2023,beef round,Meat,499,297
+12/29/2023,shrimp,Meat,799,597
+12/29/2023,potatoes,Carbs,499,250
+12/29/2023,onions,Veg,299,250
+12/29/2023,chicken thighs bone in,Meat,179,99
+1/5/2024,ground beef,Meat,449,277
+1/5/2024,salmon,Meat,1099,897
+1/5/2024,shrimp,Meat,1099,897
+1/5/2024,pork chops boneless,Meat,449,269
+1/12/2024,chicken breasts boneless,Meat,399,247
+1/12/2024,shrimp,Meat,799,697
+1/19/2024,beef t-bone steak,Meat,999,697
+1/19/2024,lamb loin chops,Meat,999,697
+1/19/2024,shrimp,Meat,999,797
+1/19/2024,haddock,Meat,1099,897
+1/26/2024,beef round,Meat,499,297
+1/26/2024,shrimp,Meat,799,597
+1/26/2024,chicken thighs bone in,Meat,179,99
+1/26/2024,potatoes,Carbs,499,250
+1/26/2024,onions,Veg,299,250
+2/2/2024,ground beef,Meat,449,277
+2/2/2024,salmon,Meat,1099,897
+2/9/2024,ny beef steak,Meat,899,697
+2/9/2024,lamb loin chops,Meat,899,697
+2/9/2024,shrimp,Meat,899,697
+2/9/2024,peanuts,Fat,350,197
+2/9/2024,mayo,Fat,599,397
+2/16/2024,chicken breasts boneless,Meat,399,247
+2/16/2024,haddock,Meat,1099,897
+2/16/2024,shrimp,Meat,1099,897
+2/23/2024,beef round,Meat,499,297
+2/23/2024,potatoes,Carbs,499,197
+2/23/2024,onions,Veg,299,197
+2/23/2024,chicken thighs bone in,Meat,179,99
+3/1/2024,beef sirloin steak,Meat,599,397
+3/1/2024,ground beef fancy,Meat,599,397
+3/1/2024,cod,Meat,1099,897
+3/8/2024,corned beef,Meat,299,127
+3/8/2024,potatoes,Carbs,499,197
+3/8/2024,onions,Veg,299,197
+3/8/2024,ground beef,Meat,449,277
+3/8/2024,haddock,Meat,799,697
+3/8/2024,shrimp,Meat,799,697
+3/15/2024,potatoes,Carbs,499,197
+3/15/2024,onions,Veg,299,197
+3/15/2024,chicken breasts boneless,Meat,399,197
+3/15/2024,salmon,Meat,1099,897
+3/15/2024,shrimp,Meat,1099,897
+3/15/2024,corned beef,Meat,299,127
+3/22/2024,beef round,Meat,499,297
+3/22/2024,shrimp,Meat,799,597
+3/22/2024,chicken thighs bone in,Meat,179,97
+3/22/2024,mayo,Fat,599,297
+3/29/2024,ny beef steak,Meat,899,697
+3/29/2024,haddock,Meat,1099,897
+3/29/2024,shrimp,Meat,1099,897
+3/29/2024,mayo,Fat,599,297
+4/5/2024,ground beef,Meat,449,277
+4/5/2024,salmon,Meat,1099,897
+4/5/2024,shrimp,Meat,1099,897
+4/12/2024,beef sirloin steak,Meat,599,397
+4/12/2024,ground beef fancy,Meat,599,397
+4/12/2024,chicken breasts boneless,Meat,399,197
+4/12/2024,haddock,Meat,999,797
+4/19/2024,beef round,Meat,499,297
+4/19/2024,salmon,Meat,999,897
+4/19/2024,pork chops boneless,Meat,449,247
+4/19/2024,peanuts,Fat,350,197
+4/26/2024,beef t-bone steak,Meat,899,697
+4/26/2024,lamb loin chops,Meat,889,697
+4/26/2024,chicken thighs bone in,Meat,179,87
+4/26/2024,shrimp,Meat,799,597
+5/3/2024,ground beef,Meat,449,277
+5/3/2024,pork chops bone-in,Meat,349,177
+5/3/2024,peanuts,Fat,350,197
+5/10/2024,ny beef steak,Meat,999,697
+5/10/2024,lamb loin chops,Meat,999,697
+5/10/2024,chicken tenders,Meat,399,277
+5/10/2024,pork chops boneless,Meat,399,277
+5/10/2024,shrimp,Meat,799,597
+5/17/2024,chicken breasts boneless,Meat,399,197
+5/17/2024,beef sirloin steak,Meat,599,397
+5/17/2024,ground beef fancy,Meat,599,397
+5/17/2024,haddock,Meat,1099,897
+5/17/2024,peanuts,Fat,350,197
+5/17/2024,shrimp,Meat,799,597
+5/24/2024,chicken thighs bone in,Meat,179,97
+5/24/2024,beef sirloin steak tips,Meat,899,597
+5/24/2024,salmon,Meat,999,797
+5/24/2024,peanuts,Fat,350,197
+5/24/2024,mayo,Fat,599,397
+5/31/2024,beef t-bone steak,Meat,999,697
+5/31/2024,lamb loin chops,Meat,999,697
+5/31/2024,pork chops bone-in,Meat,349,177
+5/31/2024,shrimp,Meat,699,577
+6/7/2024,ground beef,Meat,449,277
+6/7/2024,chicken tenders,Meat,399,277
+6/7/2024,haddock,Meat,999,797
+6/14/2024,pork chops boneless,Meat,399,197
+6/14/2024,shrimp,Meat,799,597
+6/14/2024,chicken breasts boneless,Meat,399,197
+6/14/2024,peanuts,Fat,350,197
+6/14/2024,ny beef steak,Meat,999,597
+6/14/2024,lamb loin chops,Meat,999,597
+6/21/2024,beef sirloin steak,Meat,599,397
+6/21/2024,ground beef fancy,Meat,599,397
+6/21/2024,salmon,Meat,1099,897
+6/21/2024,chicken thighs bone in,Meat,179,99
+6/28/2024,chicken tenders,Meat,399,299
+6/28/2024,beef t-bone steak,Meat,899,597
+6/28/2024,ny beef steak,Meat,899,597
+6/28/2024,pork chops bone-in,Meat,349,177
+6/28/2024,salmon,Meat,1299,897
+6/28/2024,shrimp,Meat,799,597
+6/28/2024,mayo,Fat,599,397
+7/5/2024,chicken breasts boneless,Meat,399,197
+7/5/2024,haddock,Meat,999,797
+7/5/2024,pork chops boneless,Meat,399,197
+7/5/2024,mayo,Fat,599,397
+7/12/2024,ground beef,Meat,449,277
+7/12/2024,salmon,Meat,999,797
+7/12/2024,beef round,Meat,499,277
+7/19/2024,beef sirloin steak,Meat,599,397
+7/19/2024,ground beef fancy,Meat,599,397
+7/19/2024,chicken thighs bone in,Meat,179,87
+7/19/2024,shrimp,Meat,699,577
+7/26/2024,beef sirloin steak tips,Meat,999,697
+7/26/2024,salmon,Meat,1299,997
+7/26/2024,chicken tenders,Meat,399,277
+8/2/2024,ny beef steak,Meat,899,597
+8/2/2024,chicken breasts boneless,Meat,399,197
+8/2/2024,swordfish,Meat,1199,997
+8/2/2024,peanuts,Fat,399,197
+8/9/2024,mayo,Fat,599,397
+8/9/2024,ground beef,Meat,449,277
+8/9/2024,beef t-bone steak,Meat,899,697
+8/9/2024,salmon,Meat,999,797
+8/16/2024,beef sirloin steak,Meat,599,397
+8/16/2024,ground beef fancy,Meat,599,397
+8/16/2024,chicken thighs bone in,Meat,179,87
+8/16/2024,haddock,Meat,999,797
+8/23/2024,chicken breasts boneless,Meat,399,197
+8/23/2024,shrimp,Meat,799,597
+8/23/2024,pork chops bone-in,Meat,349,197
+8/23/2024,peanuts,Fat,399,197
+8/30/2024,beef t-bone steak,Meat,999,697
+8/30/2024,ny beef steak,Meat,999,697
+8/30/2024,peanuts,Fat,399,197
+8/30/2024,shrimp,Meat,799,597
+9/6/2024,ground beef,Meat,449,277
+9/6/2024,salmon,Meat,999,797
+9/6/2024,pork chops boneless,Meat,449,247
+9/13/2024,beef round,Meat,499,377
+9/13/2024,potatoes,Carbs,499,197
+9/13/2024,onions,Veg,299,197
+9/13/2024,chicken thighs bone in,Meat,199,97
+9/13/2024,shrimp,Meat,799,697
+9/20/2024,swordfish,Meat,1299,997
+9/20/2024,chicken breasts boneless,Meat,399,227
+9/27/2024,beef sirloin steak,Meat,599,397
+9/27/2024,chicken tenders,Meat,449,297
+9/27/2024,haddock,Meat,999,797
+9/27/2024,Pork Tenderloin,Meat,449,297
+10/4/2024,ny beef steak,Meat,999,797
+10/4/2024,lamb loin chops,Meat,999,797
+10/4/2024,salmon,Meat,999,797
+10/4/2024,potatoes,Carbs,499,197
+10/4/2024,onions,Veg,299,197
+10/4/2024,peanuts,Fat,399,197
+10/11/2024,chicken breasts boneless,Meat,399,247
+10/11/2024,shrimp,Meat,899,697
+10/18/2024,ground beef,Meat,499,347
+10/18/2024,salmon,Meat,1099,897
+10/25/2024,beef round,Meat,499,397
+10/25/2024,potatoes,Carbs,499,197
+10/25/2024,onions,Veg,299,197
+10/25/2024,chicken thighs bone in,Meat,199,97
+10/25/2024,shrimp,Meat,799,697
+10/25/2024,peanuts,Fat,399,197
+11/1/2024,beef t-bone steak,Meat,999,797
+11/1/2024,lamb loin chops,Meat,999,797
+11/1/2024,salmon,Meat,1099,897
+11/8/2024,chicken breasts boneless,Meat,399,247
+11/8/2024,shrimp,Meat,899,697
+11/15/2024,pork chops boneless,Meat,449,247
+11/15/2024,potatoes,Carbs,499,197
+11/15/2024,onions,Veg,299,197
+11/15/2024,shrimp,Meat,799,697
+11/22/2024,ground beef,Meat,499,347
+11/22/2024,peanuts,Fat,399,197
+11/29/2024,beef round,Meat,499,397
+11/29/2024,shrimp,Meat,699,597
+12/6/2024,ny beef steak,Meat,999,797
+12/6/2024,lamb loin chops,Meat,999,797
+12/6/2024,potatoes,Carbs,499,197
+12/6/2024,onions,Veg,299,197
+12/6/2024,shrimp,Meat,899,697
+12/6/2024,salmon,Meat,1099,897
+12/6/2024,peanuts,Fat,399,197
