@@ -102,9 +102,8 @@ def train_weeks_until_sale_model(df, item_name):
     df = df.dropna(subset=['weeksUntilNextItemSale'])
     df = df.dropna(subset=['weeksSinceLastItemSale'])
     
-    # Drop rows with sales
-    df = df[df['weeksSinceLastItemSale'] != 0]
-    print(df)
+    # Drop rows with sale weeks for item name
+    # df = df[df['weeksSinceLastItemSale'] != 0]
     
     # Select features and target
     X = df.drop(columns=['weeksUntilNextItemSale'])
@@ -126,12 +125,17 @@ def train_weeks_until_sale_model(df, item_name):
 
 
 data = ProcessData()
-# Train the model for "ground beef"
-model, updated_df = train_weeks_until_sale_model(data, "ground beef")
+# Train the model for "itemName"
+itemName = 'ground beef'
+model, updated_df = train_weeks_until_sale_model(data, itemName)
 
 # Example prediction
-# example_features = updated_df.iloc[0][data.tolist() + ['weeksSinceLastItemSale']].values.reshape(1, -1)
-# predicted_weeks = model.predict(example_features)
-# print(f"Predicted weeks until next sale: {predicted_weeks[0]:.2f}")
-lastWeek = updated_df.iloc[-1]
+X = updated_df.drop(columns=['weeksUntilNextItemSale'])
+lastWeek = X.iloc[-1].to_frame().T  # Convert last row to DataFrame
+lastWeek['weeksSinceLastItemSale'] = 1
 print(lastWeek)
+
+
+# Predict weeks until next sale
+predicted_weeks = model.predict(lastWeek)
+print(f"Predicted weeks until next sale: {predicted_weeks[0]:.2f}")
