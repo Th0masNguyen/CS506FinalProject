@@ -119,7 +119,7 @@ def train_weeks_until_sale_model(df, item_name):
     # Evaluate the model
     y_pred = model.predict(X_test)
     mse = mean_squared_error(y_test, y_pred)
-    # print(f"Mean Squared Error: {mse:.2f}")
+    print(f"Mean Squared Error for {item_name}: {mse:.2f}")
     
     return model, updated_df
 
