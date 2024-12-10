@@ -119,23 +119,27 @@ def train_weeks_until_sale_model(df, item_name):
     # Evaluate the model
     y_pred = model.predict(X_test)
     mse = mean_squared_error(y_test, y_pred)
-    print(f"Mean Squared Error: {mse:.2f}")
+    # print(f"Mean Squared Error: {mse:.2f}")
     
     return model, updated_df
 
 
 data = ProcessData()
-# Train the model for "itemName"
-itemName = 'ground beef'
-model, updated_df = train_weeks_until_sale_model(data, itemName)
+gbModel, gbDf = train_weeks_until_sale_model(data, 'ground beef')
+gbX = gbDf.drop(columns=['weeksUntilNextItemSale'])
+gbLastWeek = gbX.iloc[-1].to_frame().T  
+gbPredicted_weeks = gbModel.predict(gbLastWeek)
+print(f"Predicted weeks until next ground beef sale: {gbPredicted_weeks[0]:.2f}")
 
-# Example prediction
-X = updated_df.drop(columns=['weeksUntilNextItemSale'])
-lastWeek = X.iloc[-1].to_frame().T  # Convert last row to DataFrame
-lastWeek['weeksSinceLastItemSale'] = 1
-print(lastWeek)
+cbModel, cbDf = train_weeks_until_sale_model(data, 'chicken breasts boneless')
+cbX = cbDf.drop(columns=['weeksUntilNextItemSale'])
+cbLastWeek = cbX.iloc[-1].to_frame().T 
+cbPredicted_weeks = cbModel.predict(cbLastWeek)
+print(f"Predicted weeks until next chicken breasts sale: {cbPredicted_weeks[0]:.2f}")
+
+lastWeekDate = gbLastWeek.index[0].date()
+print(lastWeekDate)
 
 
-# Predict weeks until next sale
-predicted_weeks = model.predict(lastWeek)
-print(f"Predicted weeks until next sale: {predicted_weeks[0]:.2f}")
+
+

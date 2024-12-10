@@ -1,11 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_absolute_error
-from sklearn.ensemble import RandomForestRegressor
 import numpy as np
-from sklearn.metrics import mean_squared_error
+import matplotlib.dates as mdates
 
 
 def AllDf():
@@ -25,18 +21,6 @@ def AllDf():
   data = data[selectedCols]
   return data
 
-def WeeksSinceUntilRelation(data):
-  # Scatter plot to visualize the relationship
-  plt.figure(figsize=(10, 6))
-  plt.scatter(data['WeeksSinceLastSale'], data['WeeksUntilNextSale'], alpha=0.5)
-  plt.xlabel('Weeks Since Last Sale')
-  plt.ylabel('Weeks Until Next Sale')
-  plt.title('Relationship Between Weeks Since Last Sale and Weeks Until Next Sale')
-  plt.grid(True)
-
-  # Show the plot
-  plt.tight_layout()
-  plt.show()
 
 def WeeksSinceHisto(data, item):
     x = data[data['Name'] == item]
@@ -68,7 +52,7 @@ def WeeksSinceHisto(data, item):
 def WeeksUntilHisto(data, item):
     x = data[data['Name'] == item]
     min_value = int(x['WeeksUntilNextSale'].min())
-    max_value = int(x['WeeksUntilNextSale'].max()) + 1  # Include the max value in the bins
+    max_value = int(x['WeeksUntilNextSale'].max()) + 1 # Include the max value in the bins
     
     # Calculate the mean of WeeksUntilNextSale
     mean_value = x['WeeksUntilNextSale'].mean()
@@ -89,7 +73,36 @@ def WeeksUntilHisto(data, item):
     # Show the plot
     plt.tight_layout()
     plt.show()
+    
+def WeeksUntilLinePlot(data, item):
+    # Filter the data for the specified product
+    product_data = data[data['Name'] == item]
 
+    if product_data.empty:
+        print(f"No data found for product: {item}")
+        return
+
+    # Plot the line graph for the specified product
+    plt.figure(figsize=(10, 6))
+    plt.plot(
+        product_data["Week"], 
+        product_data["WeeksUntilNextSale"], 
+        marker='o', 
+        label=item
+    )
+    
+    plt.title(f"Weeks Until Next Sale for {item}")
+    plt.xlabel("Week")
+    plt.ylabel("Weeks Until Next Sale")
+    plt.legend(title="Product")
+
+    # Format the x-axis to display full dates (day, month, year)
+    plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%d/%m/%Y'))
+    plt.xticks(rotation=45)  # Rotate the ticks for better readability
+    plt.grid(axis='y')
+    plt.tight_layout()
+    plt.show()
 
 df = AllDf()
-WeeksUntilHisto(df, 'chicken breasts boneless')
+WeeksUntilLinePlot(df, 'chicken breasts boneless')
+# WeeksUntilHisto(df, 'chicken breasts boneless')
