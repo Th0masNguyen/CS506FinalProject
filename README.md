@@ -1,7 +1,7 @@
 # CS506FinalProject
 
 # To Run Locally
-`make install`
+`make install`  
 `make run`
 
 # Description   
@@ -18,8 +18,8 @@ Two separate RandomForestRegressor models from Scikit-learn were trained for gro
 
 # Results
 The results of the predictions can be seen in the interactive flask app. For presentation, the predictions are rounded and displayed in calendar form to represent possible Star Market sale dates (Fridays). For the ground beef model, the mean squared error was 1.40. For chicken breasts, it was 0.64. Example visualizations of the inter-arrival times for sales of ground beef and chicken breasts can be seen below:
-![groundBeefIntArrival](static/groundBeefIntArrival)
-![chickenBreastsIntArrival](static/chickenBreastsIntArrival)
+![groundBeefIntArrival](static/groundBeefIntArrival.png)
+![chickenBreastsIntArrival](static/chickenBreastsIntArrival.png)
 
 
 # Reflection
