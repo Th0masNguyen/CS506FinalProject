@@ -7,6 +7,9 @@
 # Description   
 A data science project that analyzes historic trends in Star Market weekly ad sales in order to predict the next occurrence of a sale on ground beef or chicken breasts.
 
+# Goal
+To successfully predict the future Star Market sale dates of ground beef and chicken breasts so that one can make more informed and efficient grocery purchasing decisions.
+
 # Data Description
 Weekly ad data was manually extracted from online archives of images of past Star Market weekly ads (https://www.storeopeninghours.com/weekly-ads/star-market) as well as from "Your Weekly Savings" emails sent by Star Market. The data covers 21 months of consecutive weekly ads from March 2023 to December 2024. The rows of the data (data.csv) take the form of (Week, Name, Category, Regular Price, Sale Price). For instance, (10/18/2024, ground beef, meat, 4.99, 3.47). The data primarily focuses on meat items for the sake of sufficient availability and consistency on the weekly ads. 
 
