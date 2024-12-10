@@ -76,5 +76,8 @@ def WeeksUntilLinePlot(data, item):
     plt.show()
 
 df = AllDf()
+WeeksUntilLinePlot(df, 'ground beef')
+WeeksUntilHisto(df, 'ground beef')
 WeeksUntilLinePlot(df, 'chicken breasts boneless')
-# WeeksUntilHisto(df, 'chicken breasts boneless')
+WeeksUntilHisto(df, 'chicken breasts boneless')
+
