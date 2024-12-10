@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+from model import gbCalendarEvents, cbCalendarEvents, gbPredictedSaleDate, cbPredictedSaleDate
 
 app = Flask(__name__)
 
@@ -6,30 +7,29 @@ app = Flask(__name__)
 def toggle_content():
     # Default settings
     selected_images = ["groundBeefWeeksUntilHisto.png", "groundBeefIntArrival.png"]
-    selected_calendar_events = [
-        {"title": "Event 1 - Option 1", "start": "2024-12-11", "end": "2024-12-11"},
-        {"title": "Event 2 - Option 1", "start": "2024-12-15"},
-    ]
+    selected_calendar_events = gbCalendarEvents
+    predicted_sale_date = gbPredictedSaleDate
+    selected_option_name = "Ground Beef"
 
     if request.method == "POST":
         selected_option = request.form.get("option")
-        if selected_option == "option1":
+        if selected_option == "Ground Beef":
             selected_images = ["groundBeefWeeksUntilHisto.png", "groundBeefIntArrival.png"]
-            selected_calendar_events = [
-                {"title": "Event 1 - Option 1", "start": "2024-12-11", "end": "2024-12-11"},
-                {"title": "Event 2 - Option 1", "start": "2024-12-15"},
-            ]
-        elif selected_option == "option2":
+            selected_calendar_events = gbCalendarEvents
+            predicted_sale_date = gbPredictedSaleDate
+            selected_option_name = "Ground Beef"
+        elif selected_option == "Chicken Breasts":
             selected_images = ["chickenBreastsWeeksUntilHisto.png", "chickenBreastsIntArrival.png"]
-            selected_calendar_events = [
-                {"title": "Event 1 - Option 2", "start": "2024-12-20", "end": "2024-12-20"},
-                {"title": "Event 2 - Option 2", "start": "2024-12-25"},
-            ]
+            selected_calendar_events = cbCalendarEvents
+            predicted_sale_date = cbPredictedSaleDate
+            selected_option_name = "Chicken Breasts"
 
     return render_template(
         "toggle.html",
         images=selected_images,
-        events=selected_calendar_events
+        events=selected_calendar_events,
+        option_name=selected_option_name,
+        sale_date=predicted_sale_date
     )
 
 if __name__ == "__main__":

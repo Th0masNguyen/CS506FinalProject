@@ -129,17 +129,28 @@ gbModel, gbDf = train_weeks_until_sale_model(data, 'ground beef')
 gbX = gbDf.drop(columns=['weeksUntilNextItemSale'])
 gbLastWeek = gbX.iloc[-1].to_frame().T  
 gbPredicted_weeks = gbModel.predict(gbLastWeek)
-print(f"Predicted weeks until next ground beef sale: {gbPredicted_weeks[0]:.2f}")
 
 cbModel, cbDf = train_weeks_until_sale_model(data, 'chicken breasts boneless')
 cbX = cbDf.drop(columns=['weeksUntilNextItemSale'])
 cbLastWeek = cbX.iloc[-1].to_frame().T 
 cbPredicted_weeks = cbModel.predict(cbLastWeek)
-print(f"Predicted weeks until next chicken breasts sale: {cbPredicted_weeks[0]:.2f}")
 
 lastWeekDate = gbLastWeek.index[0].date()
-print(lastWeekDate)
 
+gbPredictedSaleDate = lastWeekDate + pd.Timedelta(weeks=round(gbPredicted_weeks[0]))
+cbPredictedSaleDate = lastWeekDate + pd.Timedelta(weeks=round(cbPredicted_weeks[0]))
+
+print(f"Predicted weeks until next ground beef sale: {gbPredicted_weeks[0]:.2f} ({gbPredictedSaleDate})")
+print(f"Predicted weeks until next chicken breasts sale: {cbPredicted_weeks[0]:.2f} ({cbPredictedSaleDate})")
+
+gbSaleWeeks = gbX[gbX['weeksSinceLastItemSale'] == 0].index
+cbSaleWeeks = cbX[cbX['weeksSinceLastItemSale'] == 0].index
+
+gbCalendarEvents = [{"title": "Sale Week", "start": str(date.date()), "end": str(date.date())} for i, date in enumerate(gbSaleWeeks)]
+cbCalendarEvents = [{"title": "Sale Week", "start": str(date.date()), "end": str(date.date())} for i, date in enumerate(cbSaleWeeks)]
+
+gbCalendarEvents += [{"title": "Predicted Sale Week", "start": str(gbPredictedSaleDate), "end": str(gbPredictedSaleDate)}]
+cbCalendarEvents += [{"title": "Predicted Sale Week", "start": str(cbPredictedSaleDate), "end": str(cbPredictedSaleDate)}]
 
 
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toggle Content</title>
+    <title>Prediction of Next Star Market Sale Date</title>
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.6/index.global.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.6/index.global.min.js"></script>
     <style>
@@ -19,7 +19,7 @@
             margin-top: 20px;
         }
         .images img {
-            max-width: 400px;
+            max-width: 450px;
             height: auto;
         }
         form {
@@ -37,10 +37,10 @@
     </style>
 </head>
 <body>
-    <h1>Toggle Content</h1>
+    <h1>Prediction of Next Star Market Sale Date</h1>
     <form method="POST">
-        <button name="option" value="option1">Option 1</button>
-        <button name="option" value="option2">Option 2</button>
+        <button name="option" value="Ground Beef">Ground Beef</button>
+        <button name="option" value="Chicken Breasts">Chicken Breasts</button>
     </form>
     
     <!-- Show the selected images -->
@@ -49,6 +49,11 @@
         <img src="{{ url_for('static', filename=image) }}" alt="Selected Image">
         {% endfor %}
     </div>
+
+    <!-- Text for next predicted sale week -->
+    <h2>
+        The next predicted sale week for {{ option_name }} is {{ sale_date }}
+    </h2>
     
     <!-- Calendar Component -->
     <div id="calendar"></div>
