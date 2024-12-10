@@ -17,7 +17,7 @@ The data is transformed in model.py such that each week is a separate row, with 
 Two separate RandomForestRegressor models from Scikit-learn were trained for ground beef and chicken breasts. Using the one-hot encoded columns for the sales of other items as well as the number of weeks since the last sale, these models predict the number of weeks until the next sale for their respective items. This way, the model can incorporate simple temporal trends of the individual item while also attempting to capture more complex relationships between the presence of sales for different items.
 
 # Results
-The results of the predictions can be seen in the interactive flask app. For presentation, the predictions are rounded and displayed in calendar form to represent possible Star Market sale dates (Fridays). For the ground beef model, the mean squared error was 1.40. For chicken breasts, it was 0.64. Example visualizations of the inter-arrival times for sales of ground beef and chicken breasts can be seen below:
+The results of the predictions can be seen in the interactive flask app. For presentation, the predictions are rounded and displayed in calendar form to represent possible Star Market sale dates (Fridays). A prediction of 2.21 weeks from 2024-12-6, for instance, is displayed as 2024-12-20. For the ground beef model, the mean squared error was 1.40. For chicken breasts, it was 0.64. Example visualizations of the inter-arrival times for sales of ground beef and chicken breasts can be seen below:  
 ![groundBeefIntArrival](static/groundBeefIntArrival.png)
 ![chickenBreastsIntArrival](static/chickenBreastsIntArrival.png)
 
