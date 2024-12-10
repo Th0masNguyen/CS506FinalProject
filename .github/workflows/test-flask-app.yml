@@ -19,7 +19,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: 3.10  # Specify the Python version your app uses
+        python-version: '3.10'  # Correctly specify the Python version
 
     - name: Install Dependencies
       run: |
@@ -28,5 +28,4 @@ jobs:
 
     - name: Run Tests
       run: |
-        # Run tests using pytest or another testing framework
         pytest
