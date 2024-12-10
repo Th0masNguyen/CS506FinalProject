@@ -1,30 +1,26 @@
 # CS506FinalProject
-Video link:  
-https://youtu.be/VVUz1f2MdP4
 
-Description:   
-I would like to create a project that analyzes historic Star Market Weekly Ad data in order to help me make optimal grocery shopping decisions.
+# To Run Locally
+`make install`
+`make run`
 
-Goal(s):   
-Successfully predict the future occurrences of various items in the Star Market Weekly Ad. In particular, I only really care about predicting when ground beef or boneless chicken breasts will next go on sale. So as a time-to-event prediction problem, I want to be able to feed the model (item name) so that it will return to me (next sale date).
+# Description   
+A data science project that analyzes historic trends in Star Market weekly ad sales in order to predict the next occurrence of a sale on ground beef or chicken breasts.
 
-Data Collection:  
-I have manually extracted data from various online archives of images of the Star Market weekly ads. It’s a bit over a year-and-a-half’s worth of consecutive weekly ads. The rows of the data take the form of (Week, Name, Category, Regular Price, Sale Price). For instance, (10/18/2024, ground beef, meat, 4.99, 3.47). I decided to focus primarily on meat items since I felt that this was the only category that had sufficient availability and consistency on the weekly ads. 
+# Data Description
+Weekly ad data was manually extracted from online archives of images of past Star Market weekly ads (https://www.storeopeninghours.com/weekly-ads/star-market) as well as from "Your Weekly Savings" emails sent by Star Market. The data covers 21 months of consecutive weekly ads from March 2023 to December 2024. The rows of the data (data.csv) take the form of (Week, Name, Category, Regular Price, Sale Price). For instance, (10/18/2024, ground beef, meat, 4.99, 3.47). The data primarily focuses on meat items for the sake of sufficient availability and consistency on the weekly ads. 
 
-Data Cleaning:  
-Missing regular prices were filled in with the last recorded regular price. Some items such as “ground beef” were separated into “ground beef” and “fancy ground beef” because their original recording did not reflect the difference in regular prices. For now, I’m dropping everything besides Week and Name because the pricing trends don’t seem interesting or useful.
+# Data Processing 
+The data is transformed in model.py such that each week is a separate row, with one-hot encoded columns indicating the presence of a sale for each item in the data. Then, using separate models for both ground beef and chicken breasts, columns for the number of weeks since the last sale and the number of weeks until the next sale (as present in the data) are added.
 
-Feature Extraction:  
-For each unique item name, I have WeeksSinceLastSale and WeeksUntilNextSale.
+# Data Modeling  
+Two separate RandomForestRegressor models from Scikit-learn were trained for ground beef and chicken breasts. Using the one-hot encoded columns for the sales of other items as well as the number of weeks since the last sale, these models predict the number of weeks until the next sale for their respective items. This way, the model can incorporate simple temporal trends of the individual item while also attempting to capture more complex relationships between the presence of sales for different items.
 
-Data Modeling:  
-Currently, I’m using a very basic linear regression model for each unique item name where the independent variable is WeeksSinceLastSale and the dependent variable is WeeksUntilNextSale.
+# Results
+The results of the predictions can be seen in the interactive flask app. For presentation, the predictions are rounded and displayed in calendar form to represent possible Star Market sale dates (Fridays). For the ground beef model, the mean squared error was 1.40. For chicken breasts, it was 0.64. Example visualizations of the inter-arrival times for sales of ground beef and chicken breasts can be seen below:
+![groundBeefIntArrival](static/groundBeefIntArrival)
+![chickenBreastsIntArrival](static/chickenBreastsIntArrival)
 
-Data Visualization:  
-Not too sure yet. I’ll probably want a simple scatter plot where each point represents the presence of a discount for a certain food item across all of the weeks from the collected data. I also want to visualize the probability distributions of a given food item being on sale in the next week.
 
-Test Plan:  
-Testing on 4-5 instances of the weekly ads toward the end of October through November sounds good to me. Also, the lack of raw data volume makes testing a little tricky.
-
-Next Steps:  
-I kinda wanna see what the predictions would look like if I treated it as a classification problem instead of regression. I could probably try both. I also need to work on a web app interface.
+# Reflection
+The predictions seem to largely follow the simple average of the inter-arrival times for either ground beef or chicken breasts. While these predictions aren’t wholly inaccurate, I believe that with greater volume of data, it could be possible to achieve better predictions by leveraging more complex relationships between different items or other features. Thus, it may be worth revisiting data collection techniques such as OCR in order to automate collection.
