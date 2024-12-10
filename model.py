@@ -149,8 +149,8 @@ cbSaleWeeks = cbX[cbX['weeksSinceLastItemSale'] == 0].index
 gbCalendarEvents = [{"title": "Sale Week", "start": str(date.date()), "end": str(date.date())} for i, date in enumerate(gbSaleWeeks)]
 cbCalendarEvents = [{"title": "Sale Week", "start": str(date.date()), "end": str(date.date())} for i, date in enumerate(cbSaleWeeks)]
 
-gbCalendarEvents += [{"title": "Predicted Sale Week", "start": str(gbPredictedSaleDate), "end": str(gbPredictedSaleDate)}]
-cbCalendarEvents += [{"title": "Predicted Sale Week", "start": str(cbPredictedSaleDate), "end": str(cbPredictedSaleDate)}]
+gbCalendarEvents += [{"title": "Predicted", "start": str(gbPredictedSaleDate), "end": str(gbPredictedSaleDate)}]
+cbCalendarEvents += [{"title": "Predicted", "start": str(cbPredictedSaleDate), "end": str(cbPredictedSaleDate)}]
 
 
 

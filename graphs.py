@@ -21,34 +21,6 @@ def AllDf():
   data = data[selectedCols]
   return data
 
-
-def WeeksSinceHisto(data, item):
-    x = data[data['Name'] == item]
-    min_value = int(x['WeeksSinceLastSale'].min())
-    max_value = int(x['WeeksSinceLastSale'].max()) + 1  # Include the max value in the bins
-    
-    # Calculate the mean of WeeksSinceLastSale
-    mean_value = x['WeeksSinceLastSale'].mean()
-    
-    # Create bins with an interval of 1
-    bins = range(min_value, max_value + 1)
-    
-    # Plot histogram of WeeksSinceLastSale
-    plt.figure(figsize=(10, 6))
-    plt.hist(x['WeeksSinceLastSale'], bins=bins, edgecolor='black')
-    plt.xlabel('Weeks Since Last Sale')
-    plt.ylabel('Frequency')
-    plt.title(f'Distribution of Weeks Since Last Sale for {item}')
-    plt.grid(axis='y')
-    
-    # Add a vertical line for the mean
-    plt.axvline(mean_value, color='red', linestyle='dashed', linewidth=1)
-    plt.text(mean_value, plt.gca().get_ylim()[1] * 0.9, f'Mean: {mean_value:.2f}', color='red')
-    
-    # Show the plot
-    plt.tight_layout()
-    plt.show()
-
 def WeeksUntilHisto(data, item):
     x = data[data['Name'] == item]
     min_value = int(x['WeeksUntilNextSale'].min())
